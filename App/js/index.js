@@ -28,7 +28,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.0476190476190474em")
                 .setWidth("19.123809523809523em")
                 .setHeight("19.123809523809523em")
-                .setCaption("Panel")
+                .setCaption("Main")
             );
             
             append(
@@ -55,23 +55,14 @@ xui.Class('App', 'xui.Module',{
                 .setTop("25.142857142857142em")
                 .setWidth("19.123809523809523em")
                 .setHeight("19.123809523809523em")
-                .setCaption("Panel")
+                .setCaption("Builder")
             );
             
-            append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button14")
-                .setLeft("11.047619047619047em")
-                .setTop("32em")
-                .setCaption("Add wpn")
-            );
-            
-            append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button15")
-                .setLeft("9.6em")
-                .setTop("35.80952380952381em")
-                .setCaption("Generate Build")
+            host.xui_ui_panel7.append(
+                xui.create("xui.UI.Input")
+                .setHost(host,"xui_ui_input22")
+                .setLeft("3.3523809523809525em")
+                .setTop("6.3238095238095235em")
             );
             
             return children;
@@ -82,6 +73,17 @@ xui.Class('App', 'xui.Module',{
         customAppend : function(parent, subId, left, top){
             // "return false" will cause all the internal UI controls will be added to the parent panel
             return false;
+        },
+        /**
+         * Fired when user click it
+         * @method onClick [xui.UI.Button event]
+         * @param {xui.UIProfile.} profile  The current control's profile object
+         * @param {Event} e , Dom event object
+         * @param {Element.xui} src  id or Dom Element
+         * @param {} value  Object
+        */
+        _xui_ui_button11_onclick:function(profile, e, src, value){
+            var ns = this, uictrl = profile.boxing();
         }
         /*,
         // To determine how properties affects this module
