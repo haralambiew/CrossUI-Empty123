@@ -34,9 +34,17 @@ xui.Class('App', 'xui.Module',{
             append(
                 xui.create("xui.UI.Button")
                 .setHost(host,"xui_ui_button5")
-                .setLeft("8.380952380952381em")
+                .setLeft("11.047619047619047em")
                 .setTop("9.904761904761905em")
                 .setCaption("Add wpn")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button11")
+                .setLeft("9.6em")
+                .setTop("13.714285714285714em")
+                .setCaption("Generate Build")
             );
             
             return children;
