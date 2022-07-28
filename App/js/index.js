@@ -19,7 +19,26 @@ xui.Class('App', 'xui.Module',{
         iniComponents : function(){
             // [[Code created by CrossUI RAD Studio
             var host=this, children=[], append=function(child){children.push(child.get(0));};
-
+            
+            append(
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel4")
+                .setDock("none")
+                .setLeft("3.8095238095238093em")
+                .setTop("3.0476190476190474em")
+                .setWidth("19.123809523809523em")
+                .setHeight("19.123809523809523em")
+                .setCaption("Panel")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button5")
+                .setLeft("8.380952380952381em")
+                .setTop("9.904761904761905em")
+                .setCaption("Add wpn")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
