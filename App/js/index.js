@@ -47,6 +47,33 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Generate Build")
             );
             
+            append(
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel7")
+                .setDock("none")
+                .setLeft("3.8095238095238093em")
+                .setTop("25.142857142857142em")
+                .setWidth("19.123809523809523em")
+                .setHeight("19.123809523809523em")
+                .setCaption("Panel")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button14")
+                .setLeft("11.047619047619047em")
+                .setTop("32em")
+                .setCaption("Add wpn")
+            );
+            
+            append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button15")
+                .setLeft("9.6em")
+                .setTop("35.80952380952381em")
+                .setCaption("Generate Build")
+            );
+            
             return children;
             // ]]Code created by CrossUI RAD Studio
         },
